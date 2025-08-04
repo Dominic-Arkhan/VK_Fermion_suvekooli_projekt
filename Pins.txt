@@ -1,0 +1,11 @@
+Digital 
+13  esimene LED vastab kaasile
+12 Teine LEd vastab vedelikule 
+8 ja 7 Vastavad vastab Temperatuurile 8 on madal 7 on kõrge
+4 on sisend nuppu jaoks
+3 (PWM) vastab  piezo buzzerile
+analoog
+A0 vee tase
+A1  temp
+A2 gaasi
+gaasi andur ülevalt vaatades vasakalt paremale vcc gnd do (digital) ao (analog)
