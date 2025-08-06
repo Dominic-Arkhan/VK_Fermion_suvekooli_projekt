@@ -13,7 +13,7 @@ int vesi = A0;
 int temp = A1;
 int gas = A2;
 
-int a = 0;
+int a = 0; //defineerime
 int b = 0;
 int c = 0;
 
@@ -41,17 +41,15 @@ void loop() {
 
 
   int alarm = a + b + c;
-
+  switcher(nup, a, b, c, alarm);
   if (alarm < 2) {
-    switcher(nup, a, b, c, alarm);
-    a = gased(gaslug, led1);
+    a = gased(gaslug, led1); //muudame väärtuse
     b = waterlevel(vesilug, led2);
     c = temperature(templug, led3, led4);
     Serial.println("// ?res? //");
   } else {
     Serial.print(" Error ");
     blingbling(led1, led2, led3, led4);
-    switcher(nup, a, b, c, alarm);
     buzzing(buzz);
     Serial.println("// ?res? //");
   }
@@ -62,7 +60,7 @@ int gased(int x, int y) {
     Serial.print("G");
     Serial.print(x);
     Serial.print(" ");
-  if (x > 400 || x < 300) {
+  if (x > 80 || x < 30) {
     digitalWrite(y, HIGH);
     digitalWrite(y, LOW);
     return 1;
@@ -100,7 +98,7 @@ int temperature(int x, int y, int z) {
     digitalWrite(y, LOW);
     delay(1000);
     return 1;
-  } else if (x > 860) {
+  } else if (x > 480) {
     digitalWrite(y, LOW);
     digitalWrite(z, HIGH);
     delay(1000);
