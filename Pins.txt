@@ -6,6 +6,9 @@ Digital
 3 (PWM) vastab  piezo buzzerile
 analoog
 A0 vee tase
-A1  temp
-A2 gaasi
-gaasi andur ülevalt vaatades vasakalt paremale vcc gnd do (digital) ao (analog)
+A1  gas
+A2 temp
+
+gaasi andur ülevalt vaatades vasakalt paremale vcc gnd do (digital) ao (analog) meie kastumae AO
+Koodis peab gaasi natugene mägima või ootamama millal andur soojeneb üles 
+kokku on 6 funktsiooni 3 on anduride jaoks
